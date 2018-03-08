@@ -1,0 +1,4 @@
+include README.rst
+include LICENSE
+recursive-include translatable_fields/static *
+recursive-include translatable_fields/templates *

@@ -1,0 +1,17 @@
+<div class="translatable_field">
+    <div class="translatable_field__tabs">
+        {% for widget in widget.subwidgets %}
+            <div class="translatable_field__tabs-item">
+                <label for="{{ widget.attrs.id }}">{{ widget.lang_name }}</label>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="translatable_field__widgets">
+        {% for widget in widget.subwidgets %}
+            <div class="translatable_field__widgets-item" id="{{ widget.attrs.id }}_{{ widget.lang_code }}">
+{#                {% include widget.template_name %}#}
+                {{ widget.html }}
+            </div>
+        {% endfor %}
+    </div>
+</div>

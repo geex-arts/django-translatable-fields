@@ -1,0 +1,47 @@
+.translatable_field {
+    display: inline-block;
+}
+
+.translatable_field__tabs {
+    display: block;
+    margin: 0 0 6px 0;
+}
+
+.translatable_field__tabs-item {
+    display: inline-block;
+    margin-left: 5px;
+    border-radius: 4px;
+    padding: 0 10px;
+    background: #79aec8;
+    color: #fff;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.translatable_field__tabs-item:first-child {
+    margin-left: 0;
+}
+
+.translatable_field__tabs-item:hover {
+    background: #417690;
+    opacity: 1;
+}
+
+.translatable_field__tabs-item label, .inline-group .translatable_field__tabs-item label {
+    width: auto;
+    font-size: 11px;
+    padding: 2px 0 1px 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.translatable_field__tabs-item_active,
+.translatable_field__tabs-item_active:hover {
+    background: #79aec8;
+    border-color: #79aec8;
+    opacity: 1;
+}
+
+.translatable_field p.file-upload {
+    margin-left: 0;
+}
