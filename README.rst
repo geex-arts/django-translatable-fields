@@ -8,7 +8,7 @@ Installation
 ============
 
 
-* Add application
+* Add application in `settings.py`
 
 .. code:: python
 
@@ -17,6 +17,19 @@ Installation
         'translatable_fields',
         ...
     )
+ 
+* Specify languages in `settings.py`
+
+.. code:: python
+ 
+    # Internationalization
+
+    LANGUAGE_CODE = 'en'
+    LANGUAGES = (
+        ('en', 'English'),
+        ('ru', 'Русский')
+    )
+
 
 * Add `TranslatableField` model fields
 
