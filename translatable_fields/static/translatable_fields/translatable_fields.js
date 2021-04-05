@@ -1,4 +1,5 @@
-(function($) {
+window.addEventListener("load", function() {
+    const $ = django.jQuery;
     var syncTabs = function($container, lang) {
         $container.find('.translatable_field__tabs-item label:contains("'+lang+'")').each(function(){
             $(this).parents('.translatable_field').find('.translatable_field__tabs-item').removeClass('translatable_field__tabs-item_active');
@@ -8,7 +9,6 @@
         });
     };
 
-    $(function (){
         $('.translatable_field__widgets-item').hide();
         // set first tab as active
         $('.translatable_field').each(function () {
@@ -33,5 +33,4 @@
             }
             return false;
         });
-    });
-})(django.jQuery);
+});
