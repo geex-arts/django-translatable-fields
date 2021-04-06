@@ -1,4 +1,5 @@
-from django.contrib.postgres.fields import JSONField
+import json
+from django.db.models import JSONField
 
 from translatable_fields.value import TranslatableValue
 
@@ -9,7 +10,7 @@ class TranslatableField(JSONField):
             return value
 
         instance = TranslatableValue()
-        instance.update(value)
+        instance.update(json.loads(value))
 
         return instance
 

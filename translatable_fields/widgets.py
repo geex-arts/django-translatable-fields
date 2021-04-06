@@ -63,7 +63,7 @@ class TranslatableWidget(forms.MultiWidget):
         ])
         if all(map(lambda x: x == '', result.values())):
             return ''
-        return result
+        return json.dumps(result)
 
     def get_context(self, name, value, attrs):
         context = super(forms.MultiWidget, self).get_context(name, value, attrs)
